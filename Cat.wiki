@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This is the home page for the Cat wiki. As of today (Thursday March 29,2007) this is the only page in the Wiki, but you can expect more to come in the near future.
+This is the Cat Wiki home page. As of today (Thursday March 29,2007) this is the only page in the Wiki, but you can expect more to come in the near future.
 
 ==Relevant Links==
 
@@ -32,4 +32,3 @@ This is the home page for the Cat wiki. As of today (Thursday March 29,2007) thi
 
 * [http://swiss.csail.mit.edu/projects/scheme/ Scheme]
 * [http://www.haskell.org Haskell] 
-
