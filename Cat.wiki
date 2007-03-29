@@ -2,33 +2,34 @@
 
 = Introduction =
 
-This is the home page for the Cat wiki. As of today (Thursday March 29,2007) this is the only page in the Wiki, but likely you can expect more to come.
+This is the home page for the Cat wiki. As of today (Thursday March 29,2007) this is the only page in the Wiki, but you can expect more to come in the near future.
 
 ==Relevant Links==
 
-* [http://www.cat-language.com Cat home page]
-* [http://www.cdiggins.com Christopher Diggins's Home page]
-* [http://cat-language.googlecode.com/svn/trunk/ Cat source code]
-* [http://www.mono-project.com/ Mono Project] - an open-source .NET implementation
-* [http://groups.google.com/group/catlanguage Cat discussion group]
+  * [http://www.cat-language.com Cat home page]
+  * [http://www.cdiggins.com Christopher Diggins's Home page]
+  * [http://cat-language.googlecode.com/svn/trunk/ Cat source code]
+  * [http://www.mono-project.com/ Mono Project] - an open-source .NET implementation
+  * [http://groups.google.com/group/catlanguage Cat discussion group]
   
 ==Functional Stack-Based Programming Languages==
 
-* [http://www.latrobe.edu.au/philosophy/phimvt/joy.html Joy] 
-* [http://www.factor.com/ Factor]
+  * [http://www.latrobe.edu.au/philosophy/phimvt/joy.html Joy] 
+  * [http://www.factor.com/ Factor]
 
 
 ==Imperative Stack-Based Programming Languages==
 
-* [http://www.forth.org/ Forth]
-* [http://home.vr-web.de/stephan.becher/forth/ StrongForth]
+  * [http://www.forth.org/ Forth]
+  * [http://home.vr-web.de/stephan.becher/forth/ StrongForth]
 
 ==Stack-Based Intermediate Languages==
 
-* [http://www.ecma-international.org/publications/standards/ecma-335.htm MSIL/CLI]
-* [http://java.sun.com/docs/books/vmspec/2nd-edition/html/VMSpecTOC.doc.html Java byte-code/JVML]
+  * [http://www.ecma-international.org/publications/standards/ecma-335.htm MSIL/CLI]
+  * [http://java.sun.com/docs/books/vmspec/2nd-edition/html/VMSpecTOC.doc.html Java byte-code/JVML]
 
 ==Functional Languages==
 
 * [http://swiss.csail.mit.edu/projects/scheme/ Scheme]
 * [http://www.haskell.org Haskell] 
+
