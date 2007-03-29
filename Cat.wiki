@@ -17,11 +17,11 @@ This is the Cat Wiki home page. As of today (Thursday March 29,2007) this is the
   * [http://www.latrobe.edu.au/philosophy/phimvt/joy.html Joy] 
   * [http://www.factor.com/ Factor]
 
-
 ==Imperative Stack-Based Programming Languages==
 
   * [http://www.forth.org/ Forth]
   * [http://home.vr-web.de/stephan.becher/forth/ StrongForth]
+  * [http://partners.adobe.com/public/developer/ps/index_specs.html Postscript]
 
 ==Stack-Based Intermediate Languages==
 
@@ -30,5 +30,5 @@ This is the Cat Wiki home page. As of today (Thursday March 29,2007) this is the
 
 ==Functional Languages==
 
-* [http://swiss.csail.mit.edu/projects/scheme/ Scheme]
-* [http://www.haskell.org Haskell] 
+  * [http://swiss.csail.mit.edu/projects/scheme/ Scheme]
+  * [http://www.haskell.org Haskell]
