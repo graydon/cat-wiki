@@ -1,0 +1,20 @@
+#summary Examples of the Fibonnaci function.
+#labels Code-example
+
+= Fibonacci =
+
+Here is the Fibonnaci function in Python:
+
+{{{
+def fib(n):
+  if n <= 1:
+    return n
+  else:
+    return fib(n-1) + fib(n-2)
+}}}
+
+Here is the same function in Cat:
+
+{{{
+define fib(n) { n 1 <= [n] [n 1 - fib n 2 - fib +] if }
+}}}
