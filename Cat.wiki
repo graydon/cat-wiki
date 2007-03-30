@@ -18,3 +18,5 @@ Cat is a [Functional functional] [StackLanguages stack-based programming languag
   * [http://code.google.com/p/cat-language/w/list?q=label:Glossary Glossary]
   * [http://code.google.com/p/cat-language/w/list?q=label:CodeExample Code examples]
   * [http://code.google.com/p/cat-language/issues/list Issues]
+
+http://www.cat-language.com/cat-logo-160-b.jpg
