@@ -1,0 +1,18 @@
+#summary Quadratic function code example.
+#labels Code-example
+
+= Quadratic =
+
+Here is the Quadratic function in Python:
+
+{{{
+def quadratic(x a b c):
+    return a * x * x + b * x + c
+}}}
+
+Here is the Quadratic function in Cat using named parameters:
+
+{{{
+define quadratic(x a b c) 
+{ x sqr a * x b * + c + }
+}}}
