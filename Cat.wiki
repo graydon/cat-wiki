@@ -1,19 +1,4 @@
 #summary The Cat-project Wiki home page.
-#labels Featured
 
-= Introduction =
-
-This is the Cat Wiki home page.  
-
-==Internal Links==
-
-  * [http://cat-language.googlecode.com/svn/trunk/ C# source code]
-  * [Related Related languages and projects]  
-
-==External Links==
-
-  * [http://www.cat-language.com Cat home page]
-  * [http://www.cdiggins.com Christopher Diggins's Home page]
-  * [http://www.mono-project.com/ Mono Project] - an open-source .NET implementation
-  * [http://groups.google.com/group/catlanguage Cat discussion group]
-  
+  * [http://code.google.com/p/cat-language/w/list Cat Wiki pages] 
+  * [http://www.cat-langauge.com The Cat programming language home page]
