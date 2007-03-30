@@ -17,10 +17,11 @@ define quadratic(x a b c)
 { x sqr a * x b * + c + }
 }}}
 
-Here is the quadratic function in Cat, but in [PointFreeForm point-free form] :
+Here is the quadratic function in Cat, but in [PointFreeForm point-free form] 
+and using a [TypeAnnotation type annotation]:
 
 {{{
-define quadratic : (x=int a=int b=int c=int) 
+define quadratic : (x=float a=float b=float c=float -> float) 
 { 
   [over] dipd       // x a x b c
   [*] dip +         // x a ((x*b)+c)
