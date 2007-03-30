@@ -1,0 +1,8 @@
+#summary Explanation of type inference.
+#labels Glossary
+
+= Type Inference =
+
+Type inference is when a compiler can infer a type of a variable or function that isn't explicitly declared in the source code, by examining how it is declared. 
+
+The Cat programming language supports type inference, but the current release of the interpreter does not yet [http://code.google.com/p/cat-language/issues/list support this functionality]. 
