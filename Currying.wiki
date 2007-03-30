@@ -1,5 +1,5 @@
 #summary Currying explanation and code example.
-#labels Code-example,Glossary
+#labels CodeExample,Glossary
 
 = Currying =
 
