@@ -1,4 +1,4 @@
-#summary The Cat Wiki home page.
+#summary The Cat wiki home page.
 
 == About Cat ==
 
