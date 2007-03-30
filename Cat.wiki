@@ -1,4 +1,5 @@
 #summary The Cat-project Wiki home page.
+#labels Featured
 
 = Introduction =
 
