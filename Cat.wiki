@@ -3,13 +3,17 @@
 
 = Introduction =
 
-This is the Cat Wiki home page. As of today (Thursday March 29,2007) this is the only page in the Wiki, but you can expect more to come in the near future.
+This is the Cat Wiki home page.  
 
-==Relevant Links==
+==Internal Links==
+
+  * [http://cat-language.googlecode.com/svn/trunk/ C# source code]
+  * [Related]  
+
+==External Links==
 
   * [http://www.cat-language.com Cat home page]
   * [http://www.cdiggins.com Christopher Diggins's Home page]
-  * [http://cat-language.googlecode.com/svn/trunk/ Cat source code]
   * [http://www.mono-project.com/ Mono Project] - an open-source .NET implementation
   * [http://groups.google.com/group/catlanguage Cat discussion group]
   
