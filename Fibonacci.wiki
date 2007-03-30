@@ -1,4 +1,4 @@
-#summary Examples of the Fibonnaci function.
+#summary Fibonnaci function code example.
 #labels Code-example
 
 = Fibonacci =
@@ -13,8 +13,17 @@ def fib(n):
     return fib(n-1) + fib(n-2)
 }}}
 
-Here is the same function in Cat:
+Here is the Fibonnaci function in Cat using named parameters:
 
 {{{
-define fib(n) { n 1 <= [n] [n 1 - fib n 2 - fib +] if }
+define fib(n) 
+{ n 1 <= [n] [n 1 - fib n 2 - fib +] if }
 }}}
+
+The [point-free] form of Fibonnaci in Cat is:
+
+{{{
+define fib 
+{ dup 1 <= [] [dup 1 - fib swap 2 - fib +] if }
+}}}
+
