@@ -1,0 +1,7 @@
+#summary About Christopher Diggins
+#labels People
+
+= Christopher Diggins =
+
+I developed the open-source Cat interpreter for Windows, and designed the Cat language. 
+My home page is at [http://www.cdiggins.com CDiggins.com].
