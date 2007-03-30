@@ -5,7 +5,7 @@ The following are links to projects and languages related to [Cat].
 
 ==Functional Stack-Based Programming Languages==
 
-  * [http://www.latrobe.edu.au/philosophy/phimvt/joy.html Joy] 
+  * [Joy] 
   * [http://www.factor.com/ Factor]
 
 ==Imperative Stack-Based Programming Languages==
