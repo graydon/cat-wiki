@@ -3,7 +3,7 @@
 
 = Joy =
 
-Joy is a [functional] dynamic [StackLanguage stack-based] programming language designed by [http://www.latrobe.edu.au/philosophy/phimvt/index.html Manfred von Thun]. Joy was the primary inspiration for the Cat language.
+Joy is a [Functional functional] dynamic [StackLanguages stack-based] programming language designed by [http://www.latrobe.edu.au/philosophy/phimvt/index.html Manfred von Thun]. Joy was the primary inspiration for the Cat language.
 
 == Links ==
 
