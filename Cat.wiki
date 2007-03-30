@@ -1,4 +1,19 @@
-#summary The Cat-project Wiki home page.
+#summary The Cat Wiki home page.
+
+== About Cat ==
+
+Cat is a [Functional functional] [StackLanguage stack-based programming] designed by [ChristopherDiggins Christopher Diggins] and inspired by [Joy].
+
+== Links ==
 
   * [http://code.google.com/p/cat-language/w/list Cat Wiki pages] 
   * [http://www.cat-langauge.com The Cat programming language home page]
+  * [http://code.google.com/p/cat-language/downloads/list Downloads]
+  * [http://www.cat-language.com/manual Manual]
+  * [http://groups.google.com/group/catlanguage Discussion group and mailing list]        
+  * [http://cdiggins.com/category/cat/ CDiggins.com blog about Cat]
+  * [Licensing]
+  * [Support]
+  * [http://code.google.com/p/cat-language/w/list?q=label:Glossary Glossary]
+  * [http://code.google.com/p/cat-language/w/list?q=label:CodeExample Code examples]
+  * [http://code.google.com/p/cat-language/issues/list Issues]
