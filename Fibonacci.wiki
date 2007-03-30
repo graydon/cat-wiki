@@ -20,10 +20,9 @@ define fib(n)
 { n 1 <= [n] [n 1 - fib n 2 - fib +] if }
 }}}
 
-The [point-free] form of Fibonnaci in Cat is:
+The [PointFreeForm point-free form] of the Fibonnaci function in Cat is:
 
 {{{
 define fib 
 { dup 1 <= [] [dup 1 - fib swap 2 - fib +] if }
 }}}
-
