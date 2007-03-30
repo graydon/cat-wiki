@@ -2,7 +2,7 @@
 
 == About Cat ==
 
-Cat is a [Functional functional] [StackLanguage stack-based programming] designed by [ChristopherDiggins Christopher Diggins] and inspired by [Joy].
+Cat is a [Functional functional] [StackLanguages stack-based programming language] designed by [ChristopherDiggins Christopher Diggins] and inspired by [Joy].
 
 == Links ==
 
@@ -11,9 +11,9 @@ Cat is a [Functional functional] [StackLanguage stack-based programming] designe
   * [http://code.google.com/p/cat-language/downloads/list Downloads]
   * [http://www.cat-language.com/manual Manual]
   * [http://groups.google.com/group/catlanguage Discussion group and mailing list]        
-  * [http://cdiggins.com/category/cat/ CDiggins.com blog about Cat]
+  * [http://cdiggins.com/category/cat/ Christopher Diggins's Cat Blog]
   * [Licensing]
-  * [Support]
+  * [Support]  
   * [http://code.google.com/p/cat-language/w/list?q=label:Glossary Glossary]
   * [http://code.google.com/p/cat-language/w/list?q=label:CodeExample Code examples]
   * [http://code.google.com/p/cat-language/issues/list Issues]
