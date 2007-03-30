@@ -1,0 +1,6 @@
+#summary Definition of point-free.
+#labels glossary
+
+==Point Free form==
+
+A function in point-free form has no variables. 
