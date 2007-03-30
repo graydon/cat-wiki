@@ -1,12 +1,11 @@
 #summary About Cat licensing, and public domain code in general.
 #labels Featured
 
-= Public Domain =
+= Cat is Public Domain =
 
 *the following is not intended as legal advice*
 
 The Cat source code and associated libraries are released into the public domain. This means you can use it for any purpose commercial or otherwise without restrictions, obligations, or warranty. 
 
 This does not mean that you have to release any derived work as public domain. You can make even the tiniest modification and copyright it. Of course, you have to keep in mind that you can't stop anyone else from doing what they want with this work, including selling it or giving it away for free.
-
 
