@@ -1,4 +1,5 @@
 #summary Definition of point-free form.
+#labels glossary
 
 ==Point Free form==
 
