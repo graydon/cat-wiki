@@ -1,5 +1,5 @@
 #summary Fibonnaci function code example.
-#labels Code-example
+#labels CodeExample
 
 = Fibonacci =
 
