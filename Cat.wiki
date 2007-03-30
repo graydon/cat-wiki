@@ -6,10 +6,11 @@ Cat is a [Functional functional] [StackLanguages stack-based programming languag
 
 == Links ==
 
-  * [http://code.google.com/p/cat-language/w/list Cat Wiki pages] 
+  * [http://code.google.com/p/cat-language/w/list All Cat wiki pages] 
   * [http://www.cat-langauge.com The Cat programming language home page]
   * [http://code.google.com/p/cat-language/downloads/list Downloads]
-  * [http://www.cat-language.com/manual Manual]
+  * [http://www.cat-language.com/manual.html Manual]
+  * [http://www.cat-language.com/paper.html Publications]
   * [http://groups.google.com/group/catlanguage Discussion group and mailing list]        
   * [http://cdiggins.com/category/cat/ Christopher Diggins's Cat Blog]
   * [Licensing]
