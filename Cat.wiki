@@ -8,7 +8,7 @@ This is the Cat Wiki home page.
 ==Internal Links==
 
   * [http://cat-language.googlecode.com/svn/trunk/ C# source code]
-  * [Related]  
+  * [Related Related languages and projects]  
 
 ==External Links==
 
