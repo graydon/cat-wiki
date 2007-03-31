@@ -23,7 +23,7 @@ and using a [TypeAnnotation type annotation]:
 {{{
 define quadratic : (x=float a=float b=float c=float -> float) 
 { 
-  [over] dipd       // x a x b c
+  [over] dip2       // x a x b c
   [*] dip +         // x a ((x*b)+c)
   [swap sqr *] dip  // (a*(x^2)) ((x*b)+c)
   +
