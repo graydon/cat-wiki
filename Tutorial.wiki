@@ -1,0 +1,55 @@
+#summary A tutorial on the Cat language
+
+= Introduction =
+
+Cat is a [Functional functional] [StackLanguages stack-based programming language]. 
+
+All operations in Cat manipulate a single shared stack.
+
+== Postfix Notation ==
+
+If you type a number in Cat it is pushed onto the stack as so:
+
+{{{
+>> 2
+stack: 2
+>> 3
+stack: 2 3
+}}}
+
+You call then write an operator such as: 
+
+{{{
+>> +
+stack: 5
+}}}
+
+If you want to remove an item from the stack you can call 'pop':
+
+{{{
+>> pop 
+stack: _empty_
+}}}
+
+You can also enter multiple numbers or instructions on the same line:
+
+{{{
+>> 1 2 3
+stack: 1 2 3 
+}}} 
+
+You can remove all items from a stack by calling 'clr':
+
+{{{
+>> clr
+stack: _empty_
+}}}
+
+The three basics instructions for manipulating the stack are:
+
+  * 'pop' - remove top item
+  * 'dup' - duplicate top item
+  * 'swap' swap top two items
+
+More to come soon ...
+
