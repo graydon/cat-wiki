@@ -1,4 +1,5 @@
 #summary A tutorial on the Cat language
+#labels Featured
 
 = Introduction =
 
@@ -20,11 +21,11 @@ stack: 2 3
 You call then write an operator such as: 
 
 {{{
->> +
+>> add
 stack: 5
 }}}
 
-If you want to remove an item from the stack you can call 'pop':
+If you want to remove an item from the stack you can call `pop`:
 
 {{{
 >> pop 
@@ -38,18 +39,22 @@ You can also enter multiple numbers or instructions on the same line:
 stack: 1 2 3 
 }}} 
 
-You can remove all items from a stack by calling 'clr':
+You can remove all items from a stack by calling `clr`:
 
 {{{
 >> clr
 stack: _empty_
 }}}
 
+== Stack Manipulation ==
+
 The three basics instructions for manipulating the stack are:
 
-  * 'pop' - remove top item
-  * 'dup' - duplicate top item
-  * 'swap' swap top two items
+  * `pop` - remove top item from stack
+  * `dup` - duplicate top item on stack
+  * `swap` - swap the top two items on the stack
 
 More to come soon ...
+
+
 
