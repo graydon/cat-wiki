@@ -3,11 +3,7 @@
 
 = Introduction =
 
-Cat is a [Functional functional] [StackLanguages stack-based programming language]. 
-
-All operations in Cat manipulate a single shared stack.
-
-== Postfix Notation ==
+Cat is a [Functional functional] [StackLanguages stack-based programming language]. All operations in Cat manipulate a single shared stack.
 
 If you type a number in Cat it is pushed onto the stack as so:
 
@@ -16,27 +12,29 @@ If you type a number in Cat it is pushed onto the stack as so:
 stack: 2
 >> 3
 stack: 2 3
+>> 4
+stack: 2 3 4
 }}}
 
-You call then write an operator such as: 
+If you write an operator it will apply to the top two items 
 
 {{{
 >> add
-stack: 5
+stack: 2 7
 }}}
 
 If you want to remove an item from the stack you can call `pop`:
 
 {{{
 >> pop 
-stack: _empty_
+stack: 2
 }}}
 
 You can also enter multiple numbers or instructions on the same line:
 
 {{{
->> 1 2 3
-stack: 1 2 3 
+>> 4 4 add
+stack: 2 8 
 }}} 
 
 You can remove all items from a stack by calling `clr`:
@@ -46,15 +44,13 @@ You can remove all items from a stack by calling `clr`:
 stack: _empty_
 }}}
 
-== Stack Manipulation ==
-
 The three basics instructions for manipulating the stack are:
 
   * `pop` - remove top item from stack
   * `dup` - duplicate top item on stack
   * `swap` - swap the top two items on the stack
 
-More to come soon ...
 
+More to come soon ...
 
 
