@@ -1,10 +1,12 @@
-#summary Reverse polish notation (RPN) also known as postfix notation.
+#summary Definition of reverse polish notation a.k.a postfix notation.
 #labels Glossary
 
 = Reverse Polish Notation (RPN) =
 
-Reverse polish notation, or postfix notation, is a mathematical notation where operators are written following the operands. For example instead of using the traditional syntax of writing `1 + 2', using postfix notation we would write `1 2 +'. Common mathematical notation is known as infix notation. The Scheme programming language is an example of a language that uses prefix notation. 
+Reverse polish notation, or postfix notation, is a mathematical notation where operators are written following the operands. For example instead of using the traditional syntax of writing `1 + 2`, using postfix notation we would write `1 2 +`. The common mathematical notation is known as infix notation. The third method of expressing mathematical expressions where operators precede the operands is known as prefix notation.
 
-= Links =
+== Links ==
 
   * http://en.wikipedia.org/wiki/Reverse_polish_notation
+  * http://en.wikipedia.org/wiki/Subject_Object_Verb
+
