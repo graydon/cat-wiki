@@ -7,7 +7,7 @@ Cat is a [Functional functional] [StackLanguages stack-based programming languag
 
 For a list of all Wiki pages see http://code.google.com/p/cat-language/w/list.
 
-=== Cat-Language.com === 
+=== Cat-Language.com ===
 
   * [http://www.cat-language.com home]
   * [http://www.cat-language.com/manual.html manual]
