@@ -1,5 +1,5 @@
 #summary An explanation and copy of the standard library.
-#labels Featured,CodeExample
+#labels CodeExample
 
 = Standard Library =
 
