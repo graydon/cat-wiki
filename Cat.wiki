@@ -1,22 +1,36 @@
 #summary The Cat wiki home page.
+#labels Featured
 
 == About Cat ==
 
 Cat is a [Functional functional] [StackLanguages stack-based programming language] designed by [ChristopherDiggins Christopher Diggins] and inspired by [Joy].
 
-== Links ==
+For a list of all Wiki pages see http://code.google.com/p/cat-language/w/list.
 
-  * [http://code.google.com/p/cat-language/w/list All Cat wiki pages] 
-  * [http://www.cat-langauge.com The Cat programming language home page]
-  * [http://code.google.com/p/cat-language/downloads/list Downloads]
-  * [http://www.cat-language.com/manual.html Manual]
-  * [http://www.cat-language.com/paper.html Publications]
-  * [http://groups.google.com/group/catlanguage Discussion group and mailing list]        
-  * [http://cdiggins.com/category/cat/ Christopher Diggins's Cat Blog]
-  * [Licensing]
-  * [Support]  
-  * [http://code.google.com/p/cat-language/w/list?q=label:Glossary Glossary]
-  * [http://code.google.com/p/cat-language/w/list?q=label:CodeExample Code examples]
-  * [http://code.google.com/p/cat-language/issues/list Issues]
+=== Cat-Language.com === 
+
+  * [http://www.cat-language.com home]
+  * [http://www.cat-language.com/manual.html manual]
+  * [http://www.cat-language.com/manual.html#primitives primitives]
+  * [http://www.cat-language.com/manual.html#syntax syntax]
+  * [http://www.cat-language.com/paper.html publications]
+
+=== Google Code Host ===
+
+  * [http://code.google.com/p/cat-language/ project home]
+  * [http://code.google.com/p/cat-language/downloads/list downloads]
+  * [http://code.google.com/p/cat-language/wiki/Cat wiki] - this page
+  * [http://code.google.com/p/cat-language/wiki/Library library]
+  * [http://code.google.com/p/cat-language/wiki/Tutorial tutorial]
+  * [http://code.google.com/p/cat-language/wiki/Licensing licensing]
+  * [http://code.google.com/p/cat-language/wiki/Support support]
+  * [http://cat-language.googlecode.com/svn/trunk/ source code]
+  * [http://code.google.com/p/cat-language/w/list?q=label:CodeExample examples]
+  * [http://code.google.com/p/cat-language/issues/list issues]
+
+===  External ===
+
+  * [http://groups.google.com/group/catlanguage discussion]
+  * [http://cdiggins.com/category/cat/ blog]
 
 http://www.cat-language.com/cat-logo-160-b.jpg
