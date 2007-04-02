@@ -5,7 +5,7 @@
 
 The term primitive can be used to refer to either primitive functions or primitive types. 
 
-== Primitive Types == 
+== Primitive Types ==
 
 The primitive types are types which are predefined by the Cat compiler or interpreter. For the time being, no new types can be defined, so all types are primitives. The following are the primitive types:
 
