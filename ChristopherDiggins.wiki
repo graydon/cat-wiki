@@ -3,5 +3,5 @@
 
 = Christopher Diggins =
 
-I developed the open-source Cat interpreter for Windows, and designed the Cat language. 
-My home page is at [http://www.cdiggins.com CDiggins.com].
+I designed the Cat language and developed the first Cat interpreter. My home page is at [http://www.cdiggins.com CDiggins.com].
+
