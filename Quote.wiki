@@ -1,0 +1,15 @@
+#summary Explanation of the quote function.
+#labels Glossary,Primitive
+
+= Quote =
+
+The quote primitive function pops a value from the stack, and pushes a [Arity nullary] function that always returns that value onto the stack. In other words the quote function creates a [Thunk thunk].
+
+The quote instruction is key to higher-order functional programming, and is used in the definition of basic functions such as [Curry curry]. 
+
+== Type ==
+
+{{{
+quote : ('a -> ( -> 'a))
+}}}
+
