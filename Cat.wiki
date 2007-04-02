@@ -5,11 +5,27 @@
 
 Cat is a [Functional functional] [StackLanguages stack-based programming language] designed by [ChristopherDiggins Christopher Diggins] and inspired by [Joy].
 
-For a list of all Wiki pages see http://code.google.com/p/cat-language/w/list.
-
 http://www.cat-language.com/cat-logo-160-b.jpg
 
 == Links ==
+
+=== Wiki Page List ===
+
+  * [http://code.google.com/p/cat-language/w/list All Wiki pages]
+  * [http://code.google.com/p/cat-language/w/list?q=label:CodeExample code example pages]
+  * [http://code.google.com/p/cat-language/w/list?q=label:Glossary definitions]
+
+=== Project Wiki Pages ==
+
+  * [GettingInvolved getting involved]
+  * [Support support]
+  * [Licensing licensing]
+
+=== Language Wiki Pages ==
+
+  * [Library standard library]
+  * [Primitives primitives]
+  * [Tutorial tutorial]
 
 === Cat-Language.com ===
 
@@ -23,13 +39,7 @@ http://www.cat-language.com/cat-logo-160-b.jpg
 
   * [http://code.google.com/p/cat-language/ project home]
   * [http://code.google.com/p/cat-language/downloads/list downloads]
-  * [http://code.google.com/p/cat-language/wiki/Cat wiki] - this page
-  * [http://code.google.com/p/cat-language/wiki/Library library]
-  * [http://code.google.com/p/cat-language/wiki/Tutorial tutorial]
-  * [http://code.google.com/p/cat-language/wiki/Licensing licensing]
-  * [http://code.google.com/p/cat-language/wiki/Support support]
   * [http://cat-language.googlecode.com/svn/trunk/ source code]
-  * [http://code.google.com/p/cat-language/w/list?q=label:CodeExample examples]
   * [http://code.google.com/p/cat-language/issues/list issues]
 
 ===  External ===
