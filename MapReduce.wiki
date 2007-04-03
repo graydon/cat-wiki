@@ -1,4 +1,4 @@
-#summary A naive implementation of the Google MapReduce algorithm.
+#summary An explanation of the Google MapReduce framework and simple implementation of a non-distributed Google MapReduce algorithm.
 #labels CodeExample,HaskellComparison
 
 = MapReduce =
@@ -85,6 +85,8 @@ where the types of the arguments could be described as:
 
 Note that these types are not actually valid Cat types. This is a planned future extension for the type system.
 
+Understanding the Cat algorithm requires familiarity with the [self_join] and [flatten] library functions. 
+
 === Usage ===
 
 The following demonstrates how the map_reduce algorithm in Cat could be used to 
@@ -134,7 +136,6 @@ The output of this example is:
 ( 3, lazy)
 ( 2, dog)
 }}}
-
 
 
 
