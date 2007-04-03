@@ -1,5 +1,5 @@
 #summary A naive implementation of the Google MapReduce algorithm.
-#labels CodeExample
+#labels CodeExample,HaskellComparison
 
 = MapReduce =
 
@@ -9,7 +9,7 @@ In addition to the input data, the MapReduce algorithm requires two functions as
 
   Note: the map and reduce functions in the paper behave differently than the primitive functions of the same name in Cat and other functional languages.
 
-The following pseduo-code example taken from the paper demonstrates sample input functions to the MapReduce algorithm that count words from multple input documents:
+The following pseduo-code example taken from the paper by Dean and Ghemawat demonstrates sample input functions to the MapReduce algorithm that count words from multple input documents:
 
 {{{
 map(String key, String value):
@@ -27,7 +27,42 @@ reduce(String key, Iterator values):
   Emit(AsString(result));
 }}}
 
-== Cat Implementation ==
+These two functions when passed to the MapReduce framework, would potentially allow us to count all words in occurences. 
+
+== MapReduce in Haskell ==
+
+The paper [http://www.cs.vu.nl/~ralf/MapReduce/paper.pdf Google's MapReduce Programming Model -- Revisited] by Ralf Lammel provides a detailed explanation of the MapReduce algorithm using [Haskell] as an example language. 
+
+The MapReduce algorithm is shown written in Haskell in Lammel's paper as (the terms "map" and "reduce" have been replaced with "m" and "r" for clarity:
+
+{{{
+mapReduce m r
+  = reducePerKey r -- 3. Apply r to each group
+  . groupByKey     -- 2. Group intermediates per key
+  . mapPerKey m    -- 1. Apply m to each key/value pair
+}}}
+
+From Lammel's paper: 
+
+  We note that the basic skeleton of MapReduce computations is stunningly simple. We assume that mapPerKey, groupByKey and reducePerKey are components of the MapReduce library.
+
+Notice that Lammel uses the function composition operator "." which makes the mapReduce algorithm look almost like a Cat program. He could have written: 
+
+{{{
+mapReduce m r
+  = r . reducePerKey . groupByKey . m . mapPerKey
+}}}
+
+If we were to rewrite the above algorithm in Cat using named parameters we would arrive with:
+
+{{{
+define mapReduce(m r) 
+  = r reducePerKey groupByKey m MapPerKey
+}}}
+
+  `Note: the named parameter version doesn't work in the current Cat interpreter (version 0.10.3) due to an error with dynamic function resolution`
+
+== MapReduce in Cat ==
 
 The implementation of a naive non-distributed MapReduce algorithm can be expressed in a one-line Cat program as:
 
@@ -50,7 +85,7 @@ where the types of the arguments could be described as:
   freduce = pair(list('output_value), 'output_key) -> pair('output_value, 'output_key)
 }}}
 
-Note that these tyeps are not actually valid Cat types. This is a planned future extension for the type system.
+Note that these types are not actually valid Cat types. This is a planned future extension for the type system.
 
 == Example ===
 
