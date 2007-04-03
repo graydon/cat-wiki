@@ -1,4 +1,4 @@
-#summary An explanation of the Google MapReduce framework and simple implementation of a non-distributed Google MapReduce algorithm.
+#summary An explanation of the Google MapReduce framework and simple implementation of a MapReduce algorithm.
 #labels CodeExample,HaskellComparison
 
 = MapReduce =
@@ -136,6 +136,5 @@ The output of this example is:
 ( 3, lazy)
 ( 2, dog)
 }}}
-
 
 
