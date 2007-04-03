@@ -23,6 +23,3 @@ stack: (1, 2, 3, 4)
 == See Also ==
 
   * [MapReduce]
-  * [foldl]
-  * [nil]
-  * [cat]
