@@ -44,7 +44,7 @@ mapReduce m r
 
 From Lammel's paper: 
 
-  We note that the basic skeleton of MapReduce computations is stunningly simple. We assume that mapPerKey, groupByKey and reducePerKey are components of the MapReduce library.
+  "We note that the basic skeleton of MapReduce computations is stunningly simple. We assume that mapPerKey, groupByKey and reducePerKey are components of the MapReduce library."
 
 Notice that Lammel uses the function composition operator "." which makes the mapReduce algorithm look almost like a Cat program. He could have written: 
 
@@ -59,8 +59,6 @@ If we were to rewrite the above algorithm in Cat using named parameters we would
 define mapReduce(m r) 
   = r reducePerKey groupByKey m MapPerKey
 }}}
-
-  `Note: the named parameter version doesn't work in the current Cat interpreter (version 0.10.3) due to an error with dynamic function resolution`
 
 == MapReduce in Cat ==
 
@@ -87,7 +85,7 @@ where the types of the arguments could be described as:
 
 Note that these types are not actually valid Cat types. This is a planned future extension for the type system.
 
-== Example ===
+=== Usage ===
 
 The following demonstrates how the map_reduce algorithm in Cat could be used to 
 count words from sentences: 
