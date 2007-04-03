@@ -3,7 +3,7 @@
 
 = The self_join Library Function =
 
-The self_join standard library function takes a list of [Pair pairs] as input that consists of a key in the first position and a value in the second position. The output of self_join is a list of pairs of keys and value lists. For each unique input key, there is only one corresponding output pair. 
+The self_join standard library function accepts a list of [pair pairs] that consists of a key in the first position and a value in the second position. The output of self_join is a list of pairs of keys and lists. For each unique input key, there is only one corresponding output pair which consists of the key as the first element and a list of all corresponding values as the second element.
 
 For example:
 
