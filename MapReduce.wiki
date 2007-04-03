@@ -3,11 +3,11 @@
 
 = MapReduce =
 
-MapReduce is the name of an algorithm used by Google for performing distributed computation. The MapReduce algorithm is described in the paper [http://labs.google.com/papers/mapreduce.html MapReduce: Simplified Data Processing on Large Clusters] by Jeffrey Dean and Sanjay Ghemawat. 
+MapReduce is the name of a programming framework used by Google for performing distributed computation. The MapReduce algorithms are described in the paper [http://labs.google.com/papers/mapreduce.html MapReduce: Simplified Data Processing on Large Clusters] by Jeffrey Dean and Sanjay Ghemawat. 
 
-In addition to the input data, the MapReduce algorithm requires two functions as arguments. A function for generating intermediate data sets (named "map" in the paper) and a function for combining intermediate data sets into smaller data sets (named "reduce" in the paper). The MapReduce framework then distributes tasks as needed, taking care of the messy details of task scheduling. 
+In addition to the input data, the MapReduce framework requires the user to pass two functions to describe the computation task. One function generates intermediate data sets (named "map" in the paper) and a function for combining intermediate data sets into smaller data sets (named "reduce" in the paper). The MapReduce framework then distributes tasks as needed, taking care of the messy details of task scheduling. 
 
-  Note: the map and reduce functions in the paper behave differently than the primitive functions of the same name in Cat and other functional languages.
+  Note: the map and reduce functions in the paper are different than the primitive functions of the same name in Cat and other functional languages. This is a source of considerable confusion for people.
 
 The following pseduo-code example taken from the paper by Dean and Ghemawat demonstrates sample input functions to the MapReduce algorithm that count words from multple input documents:
 
@@ -136,7 +136,6 @@ The output of this example is:
 ( 3, lazy)
 ( 2, dog)
 }}}
-
 
 
 
