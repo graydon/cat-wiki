@@ -3,7 +3,7 @@
 
 == About Cat ==
 
-Cat is a [Functional functional] [StackLanguages stack-based programming language] designed by [ChristopherDiggins Christopher Diggins] and inspired by [Joy].
+Cat is a [functional] [StackLanguages stack-based programming language] designed by [ChristopherDiggins Christopher Diggins] and inspired by [Joy].
 
 http://www.cat-language.com/cat-logo-160-b.jpg
 
