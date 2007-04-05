@@ -1,9 +1,11 @@
-#summary The Cat interpreter implementation in a nut-shell.
+#summary The Cat interpreter implementation in a nutshell.
 #labels Implementation
 
 = Introduction =
 
-The Cat interpreter is written in C# and is completely public domain. This document provides the so-called "ten thousand foot view" of how the interpreter works.
+The Cat interpreter is written in C# and is completely public domain. One of the intentions of the Cat project is to help other people develop their own compilers and interpreters, by providing a simple open-source and non-toy implementation of a programming language interpreter to use and play with.
+
+This document provides the so-called "ten thousand foot view" of how the interpreter works. 
 
 == Cat Interpreter ==
 
@@ -51,11 +53,13 @@ ProcessExpression(CatExpressionNode expr)
 
 The following list describes how the pseudo-code maps to an actual implementation:
 
-  * main interpreter loop - This can be found in the function MainClass.Main in the file [http://cat-language.googlecode.com/svn/trunk/Main.cs Main.cs]
+  * The main interpreter loop can be found in the [http://cat-language.googlecode.com/svn/trunk/Main.cs MainClass.Main] method. 
 
-  * registering primitives - Registration refers to adding [http://cat-language.googlecode.com/svn/trunk/Functions.cs functions] to a lookup table which is stored in a [http://cat-language.googlecode.com/svn/trunk/Scope.cs scope object]. This is done in the function MainClass.RegisterPrimitive in the file [http://cat-language.googlecode.com/svn/trunk/Main.cs Main.cs]. 
+  * Registration refers to adding [http://cat-language.googlecode.com/svn/trunk/Functions.cs functions] to a lookup table which is stored in a [http://cat-language.googlecode.com/svn/trunk/Scope.cs scope object]. This is done in the function MainClass.RegisterPrimitive in the file [http://cat-language.googlecode.com/svn/trunk/Main.cs Main.cs]. 
 
   * [http://cat-language.googlecode.com/svn/trunk/Primitives.cs Primitives] are defined as either a class inheriting from [http://cat-language.googlecode.com/svn/trunk/Functions.cs Function class]. The interpreter also uses the Reflection API (in [http://cat-language.googlecode.com/svn/trunk/Scope.cs Scope.RegisterType]) to iterate through all the methods of a class and create primitive objects from them. This makes it easy to extend the Cat language with new functions and types. 
+
+  * Primitive instructions that are defined as [http://cat-language.googlecode.com/svn/trunk/Method.cs methods] of a type registered through the [http://cat-language.googlecode.com/svn/trunk/Scope.cs Scope.RegisterType] function are invoked by popping values from the stack and treating them as arguments (in reverse order), and the result of invocation is pushed onto the execution stack. If the method is non-static then an implicit "this" pointer is popped from the stack last, and pushed onto the stack, before the result. Methods can not return multiple values, so not all primitives can be expressed as methods.  
 
   * Scope is a bit of a misnomer, because Cat doesn't actually support scoping. I used Scope objects as a contingency plan in case scoping is added to a later version, and as a way of managing lookup tables in a reasonable manner.
 
@@ -85,7 +89,9 @@ The following list describes how the pseudo-code maps to an actual implementatio
 
   * The resulting typed AST now contains very specific and useful information about the structure of the input. Nodes correspond to things like function definitions, and make it easy to get the name of the defined function, the expressions in the defined function
  
-  * The final step is to execute the contents of the AST. This is done by visiting nodes in the tree, and either adding function definitions to the lookup table (e.g. through [http://cat-language.googlecode.com/svn/trunk/Scope.cs Scope.AddFunction]) or to actually execute expressions, in the case of an interpreter, or to convert to an output format, in the case of a compileer. 
+  * The final step is to execute the contents of the AST. This is done by visiting nodes in the tree, and either adding function definitions to the lookup table (e.g. through [http://cat-language.googlecode.com/svn/trunk/Scope.cs Scope.AddFunction]) or to actually execute expressions, in the case of an interpreter, or to convert to an output format, in the case of a compiler. 
+
+  * The execution of a function is performed from an [http://cat-language.googlecode.com/svn/trunk/Executor.cs Executor object] that calls the [http://cat-language.googlecode.com/svn/trunk/Functions.cs Function.Eval] method passing a [http://cat-language.googlecode.com/svn/trunk/CatStack.cs CatStack object]. 
 
   * Cat expressions are either literals (i.e. integers, floating point numbers, strings, characters), function names (note: in Cat symbols like + or >= are also considered function names), or a quotation (i.e. a set of expressions enclosed with "[" and "]").
     * Literals are pushed onto the executing stack immediately 
