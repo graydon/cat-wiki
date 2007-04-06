@@ -31,6 +31,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 }}}
 
-== Getting around the License ==
+This was done to protect myself from liability, and because Google won't host public domain projects. 
 
-Because the source files are public domain, if you compile the source files yourself you have a new product which is no longer bound to the MIT license.
+You can get eliminate the MIT license in any modified work, by simply re-compiling the source files yourself. If you compile the source files yourself you have a new product which is no longer bound to the MIT license.
+
