@@ -1,9 +1,9 @@
 #summary About Cat licensing.
 #labels Featured
 
-= Cat Licensing =
+== Cat Source Files ==
 
-*the following is not intended as legal advice*
+The Cat source files are public domain. 
 
 == Cat Interpreter ==
 
@@ -30,7 +30,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 }}}
-  
-== Cat Source Files ==
 
-The Cat source files are public domain. 
+== Getting around the License ==
+
+Because the source files are public domain, if you compile the source files yourself you have a new product which is no longer bound to the MIT license.
