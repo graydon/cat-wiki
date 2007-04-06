@@ -1,11 +1,36 @@
-#summary About Cat licensing, and public domain code in general.
+#summary About Cat licensing.
 #labels Featured
 
-= Cat is Public Domain =
+= Cat Licensing =
 
 *the following is not intended as legal advice*
 
-The Cat source code and associated libraries are released into the public domain. This means you can use it for any purpose commercial or otherwise without restrictions, obligations, or warranty. 
+== Cat Interpreter ==
 
-This does not mean that you have to release any derived work as public domain. You can make even the tiniest modification and copyright it. Of course, you have to keep in mind that you can't stop anyone else from doing what they want with this work, including selling it or giving it away for free.
+The Cat interpreter is licensed under the MIT License:
 
+{{{
+Copyright (c) 2007 Christopher Diggins
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+}}}
+  
+== Cat Source Files ==
+
+The Cat source files are public domain. 
