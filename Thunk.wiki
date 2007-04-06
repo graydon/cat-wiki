@@ -3,12 +3,11 @@
 
 = Thunk =
 
-A thunk is a [Arity nullary] (i.e. zero-argument) function that returns a constant value. In Cat thunks are created using the [Quote quote instruction].  
+A thunk is a [Arity nullary] (i.e. zero-argument) function that returns a constant that is bound to the lexical scope in which it is created. 
 
-A valid `thunk` definition would be: 
+In Cat a thunk can be emulated using the [Quote quote instruction]:  
 
 {{{
 define thunk : ('a -> ( -> 'a))
 { quote }
 }}}
-
