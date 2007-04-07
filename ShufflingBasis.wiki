@@ -23,4 +23,6 @@ It is an important and useful observation that by using only a combination of th
 
 Given a sufficient number of dig and bury functions, it becomes trivial to construct a stack shuffling operator that permutes the stack of any specified depth.
 
+== See Also ==
 
+  * [WhyNotDigN Why isn't there a DigN or BuryN?]
