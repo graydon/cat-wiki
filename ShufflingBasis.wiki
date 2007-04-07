@@ -25,4 +25,4 @@ Given a sufficient number of dig and bury functions, it becomes trivial to const
 
 == See Also ==
 
-  * [WhyNotDigN Why isn't there a DigN or BuryN?]
+  * [WhyNotDigN Why isn't there a digN or buryN?]
