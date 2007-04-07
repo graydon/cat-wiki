@@ -1,5 +1,5 @@
 #summary Definition of a kind system.
-#labels Glossary
+#labels Glossary,Theory
 
 = Definition of a Kind System =
 
@@ -16,5 +16,4 @@ The usage of a kind system approach is also required in Cat to differentiate bet
 If I were to refer to any function that takes two parameters I would express it as: {{{('a 'b -> 'C)}}}. 
 
 It we think of type variables as containing a single type, and stack variables as containing sets of types, we need to differentiate between them formally (to avoid [RussellsParadox Russell's paradox]) by saying that type variables and stack variables have separate kinds. 
-
 
