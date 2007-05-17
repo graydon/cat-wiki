@@ -1,0 +1,97 @@
+#summary Using MetaCat macros.
+#labels Usage
+
+= MetaCat Macros =
+
+Macros are part of the MetaCat language an extension of the Cat language. The Cat interpreter will parse and load macros, but will not apply them unless instructed to. 
+
+You can apply macros to a quotation on the stack using the '#m' meta-command. Only a single pass of macro application is performed in this case.
+
+For more information on MetaCat macros see [http://www.cat-language.com/metacat.html the Cat specification].
+
+Some example of Meta-cat macros:
+
+{{{
+// Simple optimizations
+macro { noop } => { }
+macro { id } => { }
+macro { swap swap } => { }
+macro { dup pop } => { }
+macro { not not } => { }
+macro { pair unpair } => { }
+macro { cons uncons } => { }
+macro { qv eval } => { }
+macro { dup swap } => { dup }
+macro { dup eq } => { pop true }
+
+// Identities
+macro { $b $a swap } => { $a $b }
+macro { $a pop } => { }
+macro { $b [$A] dip } => { $A $b }
+macro { true [$B] [$A] if } => { $B }
+macro { false [$B] [$A] if } => { $A }
+macro { [$A] eval } => { $A }
+macro { $a qv } => { [$a] }
+macro { [$B] [$A] compose } => { [$B $A] }
+
+// Boolean primitives
+macro { true not } => { false }
+macro { false not } => { true }
+macro { true and } => { }
+macro { false and } => { pop false }
+macro { true or } => { pop true }
+macro { false or } => { }
+
+// Reduction based on the property of commutativity
+macro { swap and } => { and }
+macro { swap or } => { or }
+macro { swap add_int } => { add_int }
+macro { swap mul_int } => { add_int }
+macro { swap add_byte } => { add_byte }
+macro { swap mul_byte } => { add_byte }
+macro { swap add_dbl } => { add_dbl }
+macro { swap mul_dbl } => { add_dbl }
+
+// short-circuit boolean evaluation
+macro { $a and } => { [$a] [false] if }
+macro { $a or } => { [true] [$a] if }
+
+// List primitivies
+macro { [$B] to_list [$A] to_list cat } => { [$B $A] to_list }
+macro { [$B] to_list $a cons } => { [$B $a] to_list }
+macro { $a cons head } => { pop $a }
+macro { $a cons tail } => { }
+macro { $a cons first } => { $a cons first $a }
+macro { $a cons rest } => { dup $a cons swap }
+macro { $b $a pair } => { [$b $a] to_list }
+
+// Higher order list primitives fusions
+macro { $b map $a map } => { $b $a compose map }
+macro { $b filter $a filter } => { [dup $b eval $a [pop false] if] filter }
+
+// Nil list special cases
+macro { nil $a filter } => { nil }
+macro { nil $a map } => { nil }
+macro { nil $b $a fold } => { $b }
+
+// Unit list special cases
+macro { $b unit $a filter } => { $b $a eval [$b unit] [nil] if }
+macro { $b unit $a map } => { $b $a eval unit }
+macro { $c unit $b $a fold } => { $b $c $a eval }
+
+// Pair list special cases
+macro { $c $b pair $a filter } => { $b $a eval [$b unit] [nil] if }
+macro { $c $b pair $a map } => { $c $a eval $b $a eval pair }
+macro { $d $c pair $b $a fold } => { $b $c $a eval $d $a eval }
+
+// Here are some standard library shuffling functions
+macro { $b $a nip } => { $a }
+macro { $b $a popd } => { $a }
+macro { $b $a dupd } => { $b $b $a }
+macro { $c $b $a swapd } => { $b $c $a }
+macro { $c $b $a dig } => { $b $a $c }
+macro { $c $b $a bury } => { $a $c $b }
+macro { $c $b $a poke } => { $a $b $a }
+macro { $c $b $a peek } => { $c $b $a $c }
+}}}
+
