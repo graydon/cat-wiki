@@ -8,9 +8,17 @@ meta-commands are valid Cat identifiers, and could conflict with a user-definiti
 
 The meta-commands are:
 
-  * `#t` - Infer types. Usage: `[swap dup] #t`. See also: TypeInference.
-  * `#m` - Apply loaded macros to quotation on stack. Usage: `[swap swap] #m`. See also:[Macros Macros].
-  * `#pe` - Reduces an expression on the stack by pre-evaluating sub-expressions. Usage: `2 3 + +`. See also: PartialEvaluation.
-  * `#save` - saves a transcript of the session so far to the specified file name. Usage: `"transcript.txt" #save`.
-  * `#load` - opens and executes a file containing Cat code. Usage: `"mylibrary.cat" #load`.
-  * `#defs` - lists all loaded functions and their types. Usage: `#defs`.
+  * `#t` - Infer types. 
+    Usage: `[swap dup] #t`. See also: TypeInference.
+  * `#m` - Apply loaded macros to quotation on stack. 
+    Usage: `[swap swap] #m`. See also: [Macros Macros].
+  * `#pe` - Reduces an expression on the stack by pre-evaluating sub-expressions. 
+    Usage: `[2 3 + +] #pe`. See also: PartialEvaluation.
+  * `#save` - saves a transcript of the session so far to the specified file name. 
+    Usage: `"transcript.txt" #save`.
+  * `#load` - opens and executes a file containing Cat code. 
+    Usage: `"mylibrary.cat" #load`.
+  * `#defs` - lists all loaded functions and their types. 
+    Usage: `#defs`.
+
+
