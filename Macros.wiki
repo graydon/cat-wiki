@@ -1,9 +1,9 @@
-#summary Using MetaCat macros.
+#summary Using macros.
 #labels Usage
 
-= MetaCat Macros =
+= Macros =
 
-Macros are part of the MetaCat language an extension of the Cat language. The Cat interpreter will parse and load macros, but will not apply them unless instructed to. 
+Macros are part of the MetaCat language, an extension of the Cat language. The Cat interpreter will parse and load macros, but will not apply them unless instructed to. 
 
 You can apply macros to a quotation on the stack using the '#m' meta-command. Only a single pass of macro application is performed in this case.
 
@@ -94,4 +94,3 @@ macro { $c $b $a bury } => { $a $c $b }
 macro { $c $b $a poke } => { $a $b $a }
 macro { $c $b $a peek } => { $c $b $a $c }
 }}}
-
