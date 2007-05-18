@@ -10,10 +10,12 @@ The meta-commands are:
 
   * `#t` - Infer types. 
     Usage: `[swap dup] #t`. See also: TypeInference.
-  * `#m` - Apply loaded macros to quotation on stack. 
+  * `#m` - Apply loaded macros to a quotation on stack. 
     Usage: `[swap swap] #m`. See also: [Macros Macros].
-  * `#pe` - Reduces an expression on the stack by pre-evaluating sub-expressions. 
+  * `#pe` - Reduces a quotation on the stack by pre-evaluating sub-expressions. 
     Usage: `[2 3 + +] #pe`. See also: PartialEvaluation.
+  * `#o` - Optimizes a quotation using a combination of techniques.
+    Usage: `[[1 +] map [3 *] map] #o`. See also: [Optimization Optimization].
   * `#save` - saves a transcript of the session so far to the specified file name. 
     Usage: `"transcript.txt" #save`.
   * `#load` - opens and executes a file containing Cat code. 
