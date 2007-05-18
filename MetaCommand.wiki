@@ -1,0 +1,16 @@
+#summary About the interpreter meta-commands.
+#labels Glossary,Usage
+
+= Meta-Commands =
+
+Meta-commands are commands intended for the interpreter and are explicitly not part of the Cat language. A meta-command typically starts with a hash character (`#`). Note that 
+meta-commands are valid Cat identifiers, and could conflict with a user-definition. 
+
+The meta-commands are:
+
+  * `#t` - Infer types. Usage: `[swap dup] #t`. See also: TypeInference.
+  * `#m` - Apply loaded macros to quotation on stack. Usage: `[swap swap] #m`. See also:[Macros Macros].
+  * `#pe` - Reduces an expression on the stack by pre-evaluating sub-expressions. Usage: `2 3 + +`. See also: PartialEvaluation.
+  * `#save` - saves a transcript of the session so far to the specified file name. Usage: `"transcript.txt" #save`.
+  * `#load` - opens and executes a file containing Cat code. Usage: `"mylibrary.cat" #load`.
+  * `#defs` - lists all loaded functions and their types. Usage: `#defs`.
