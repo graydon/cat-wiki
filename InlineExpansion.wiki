@@ -3,4 +3,5 @@
 
 = Inline Expansion =
 
-Inline expansion replaces function calls with the function body. This can be done for a quotation using `#i` or `#i0` [MetaCommand meta-command]. The `#i` performs up to 5 passes and the `#i0` meta-command performs a single pass.
+Inline expansion is an [Optimization optimization technique] that replaces function calls with function bodies. This can be done for a quotation using `#i` or `#i0` [MetaCommand meta-command]. The `#i` performs up to 5 passes and the `#i0` meta-command performs a single pass.
+
