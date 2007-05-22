@@ -1,0 +1,17 @@
+#summary About using Cat for optimization.
+#labels Featured,Usage
+
+= Optimization =
+
+One of the major design goals of Cat is as an intermediate language for optimization. The Cat interpreter provides three tools for optimization: a [PartialEvaluation sub-expression evaluator], [InlineExpansion inline function expander], and a [MetaCat macro rewriting system].
+
+The various optimization tools are controlled by the [MetaCommands meta-commands] `#p` for partial evaluator, `#i` for inline expansion, `#m` for macro application, and `#o` for optimization.
+
+The `#o` optimization meta-command, rewrites quotations on the stack using a combination of different techniques.  
+
+
+
+
+
+
+
