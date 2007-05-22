@@ -1,13 +1,8 @@
 #summary About the MetaCat extension to Cat.
+#labels Glossary
 
 = MetaCat =
 
-MetaCat is an extension to the core cat language of [Macros macro rewriting rules]. The primary role of MetaCat is for optimization. 
+MetaCat is the name of the extension of Cat language with [Macros macros]. MetaCat is based on the paper [http://www.latrobe.edu.au/philosophy/phimvt/joy/j07rrs.html A Rewriting System for Joy] by Manfred von Thun.
 
-The MetaCat macros by themselves constitute a turing complete language. 
-
-Another interesting observation about MetaCat is that it can be used to define much of the semantics of the core Cat language.
-
-MetaCat is based on the paper [http://www.latrobe.edu.au/philosophy/phimvt/joy/j07rrs.html A Rewriting System for Joy] by Manfred von Thun.
-
-More information on MetaCat is available at http://www.cat-language.com/metacat.html
+More information is available at http://www.cat-language.com/metacat.html
