@@ -2,7 +2,7 @@
 
 = About Meta-data =
 
-Cat definitions may include meta-data comments. This is a structured form of comment which is used for documentation and automated unit testing. 
+Cat definitions may include meta-data comments. This is a structured form of comment which is used for documentation and automated unit testing. The layout of Cat meta-data is inspired by the [http://www.yaml.org/ YAML] data-serialization format.
 
 An example of Cat meta-data is:
 
