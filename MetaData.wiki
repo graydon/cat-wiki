@@ -1,6 +1,6 @@
 #summary About function meta-data.
 
-= MetaData =
+= About Meta-data =
 
 Cat definitions may include meta-data comments. This is a structured form of comment which is used for documentation and automated unit testing. 
 
@@ -32,4 +32,3 @@ You can test all loaded definitions at once using the `#ta` (for test-all) meta-
 == Help String Generation == 
 
 Using the `#h` meta-command (e.g. `[neq] #h`) generates help automatically from the meta-data.
-
