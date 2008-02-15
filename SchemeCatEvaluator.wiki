@@ -1,0 +1,57 @@
+#summary An evaluator for the core Cat language in Scheme
+#labels Implementation
+
+== Cat in Scheme ==
+
+The following is an evaluation function for Cat in Scheme. 
+
+{{{
+(define (cat-eval stk exp)
+  (if (not (list? exp))
+      (error "can only evaluate lists"))
+  (if (null? exp)
+      stk
+      (cat-eval
+      (trace 
+       (case (car exp)
+	 ((true)   (cons #t stk))
+	 ((false)  (cons #f stk))	 
+	 ((apply)  (cat-eval (cdr stk) (car stk)))
+	 ((papply) (cons (cons (cadr stk) (car stk)) (cddr stk)))
+	 ((pop)    (cdr stk))
+	 ((dup)    (cons (car stk) stk))
+	 ((swap)   (cons (cadr stk) (cons (car stk) (cddr stk))))
+	 ((dip)    (cons (cadr stk) (cat-eval (cddr stk) (car stk))))
+	 ((add)    (cons (+ (cadr stk) (car stk)) (cddr stk)))
+	 ((mul)    (cons (* (cadr stk) (car stk)) (cddr stk)))
+	 ((sub)    (cons (- (cadr stk) (car stk)) (cddr stk)))
+	 ((div)    (cons (/ (cadr stk) (car stk)) (cddr stk)))
+	 ((eq)     (cons (= (cadr stk) (car stk)) (cddr stk)))
+	 ((lt)     (cons (< (cadr stk) (car stk)) (cddr stk)))
+	 ((lteq)   (cons (<= (cadr stk) (car stk)) (cddr stk)))
+	 ((gt)     (cons (> (cadr stk) (car stk)) (cddr stk)))
+	 ((gteq)   (cons (>= (cadr stk) (car stk)) (cddr stk)))
+	 ((empty)  (cons (null? (car stk)) stk))
+	 ((cons)   (cons (list (cadr stk) (car stk)) (cddr stk)))
+	 ((uncons) (cat-eval (cdr stk) (car stk)))
+	 ((unconsd)(cons (car stk) (cat-eval (cddr stk) (cadr stk))))
+	 ((makeref)(cons (list (car stk)) (cdr stk)))
+	 ((setref) (begin 
+		     (set-car! (car stk) (cadr stk)) 
+		     (cons (car stk) (cddr stk))))
+	 ((deref)  (cons (car (car stk)) (cdr stk)))
+	 ((if)     (if (caddr stk) 
+		       (cat-eval (cdddr stk) (cadr stk)) 
+		       (cat-eval (cdddr stk) (car stk))))
+	 (else     (cons (car exp) stk))))
+       (cdr exp))))
+}}}
+
+A simple example of usage of the evaluation function
+
+{{{
+  >> (define stack '())
+  >> (cat-eval stack '(3 5 swap sub))
+  >> (pp stack)
+  '(2)
+}}}
